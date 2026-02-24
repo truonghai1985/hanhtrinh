@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiêm nghiệm | Personal Timeline</title>
+    <!-- Nhúng Google Fonts cho Typography phong cách điện ảnh -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="blog-page">
+
+    <nav id="main-navigation">
+        <div class="menu-links">
+            <div class="menu-item" onclick="window.location.href='index.html#intro'">
+                <span lang="vn">KHỞI ĐẦU</span>
+                <span lang="en">BEGINNING</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='index.html#journey'">
+                <span lang="vn">HÀNH TRÌNH (1985-2025)</span>
+                <span lang="en">JOURNEY (1985-2025)</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='index.html#roadmap'">
+                <span lang="vn">THỬ THÁCH (2026-2035)</span>
+                <span lang="en">ROADMAP (2026-2035)</span>
+            </div>
+            <div class="menu-item active" onclick="window.location.href='chiem-nghiem.html'">
+                <span lang="vn">CHIÊM NGHIỆM</span>
+                <span lang="en">REFLECTIONS</span>
+            </div>
+        </div>
+
+        <div class="lang-switcher">
+            <span id="btn-vn" class="lang-btn active" onclick="changeLang('vn')">VN</span>
+            <span style="margin: 0 5px; color: #333;">|</span>
+            <span id="btn-en" class="lang-btn" onclick="changeLang('en')">EN</span>
+        </div>
+    </nav>
+
+    <main class="blog-container">
+
+        <header class="blog-header fade-up">
+            <h1>Chiêm nghiệm</h1>
+            <p class="subtitle">Những dòng suy nghĩ đọng lại qua thời gian</p>
+        </header>
+
+        <section class="blog-controls fade-up delay-1">
+            <div class="search-wrap">
+                <input type="text" id="blogSearch" placeholder="Tìm kiếm bài viết...">
+            </div>
+            <div class="filter-wrap" id="blogFilters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="ky-uc">Ký ức</button>
+                <button class="filter-btn" data-filter="nhan-sinh">Nhân sinh</button>
+                <button class="filter-btn" data-filter="ironman">Ironman</button>
+                <button class="filter-btn" data-filter="gui-con">Gửi các con</button>
+            </div>
+        </section>
+
+        <section class="blog-grid fade-up delay-2" id="blogGrid">
+
+            <!-- Bài viết 1 -->
+            <article class="blog-card" data-category="ky-uc" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Ký ức</div>
+                <h3 class="card-title">Ngày đầu tiên cầm máy ảnh</h3>
+                <p class="card-excerpt">Cảm giác tĩnh lặng khi nhìn qua ống ngắm, thu trọn thế giới vào một khung hình
+                    nhỏ bé...</p>
+                <div class="card-date">20 Tháng 10, 2012</div>
+            </article>
+
+            <!-- Bài viết 2 -->
+            <article class="blog-card" data-category="nhan-sinh" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Nhân sinh</div>
+                <h3 class="card-title">Sự tĩnh lặng giữa nhịp sống vội vã</h3>
+                <p class="card-excerpt">Đôi khi, ta cần lùi lại một bước để thực sự thấy được bức tranh lớn hơn của cuộc
+                    đời...</p>
+                <div class="card-date">05 Tháng 04, 2021</div>
+            </article>
+
+            <!-- Bài viết 3 -->
+            <article class="blog-card" data-category="ironman" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Ironman</div>
+                <h3 class="card-title">Tại sao lại là 2028?</h3>
+                <p class="card-excerpt">Không phải là một con số ngẫu nhiên. Đó là một cam kết về sự bền bỉ, ý chí và kỷ
+                    luật...</p>
+                <div class="card-date">15 Tháng 02, 2024</div>
+            </article>
+
+            <!-- Bài viết 4 -->
+            <article class="blog-card" data-category="gui-con" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Gửi các con</div>
+                <h3 class="card-title">Thư gửi con gái trước kỳ thi lớn</h3>
+                <p class="card-excerpt">Đừng để điểm số quyết định giá trị của con. Hãy cứ nỗ lực hết mình, và ba luôn ở
+                    đây...</p>
+                <div class="card-date">01 Tháng 06, 2025</div>
+            </article>
+
+            <!-- Bài viết 5 -->
+            <article class="blog-card" data-category="ky-uc" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Ký ức</div>
+                <h3 class="card-title">Mùa hè năm 1995</h3>
+                <p class="card-excerpt">Ký ức về những buổi trưa trốn ngủ chơi bi, tiếng ve kêu râm ran trên cành bàng
+                    già...</p>
+                <div class="card-date">10 Tháng 07, 1995</div>
+            </article>
+
+            <!-- Bài viết 6 -->
+            <article class="blog-card" data-category="ironman" onclick="window.location.href='post-template.html'">
+                <div class="card-category">Ironman</div>
+                <h3 class="card-title">Bào mòn và Xây dựng</h3>
+                <p class="card-excerpt">Mỗi buổi chạy dài là một lần cơ bắp bị phá vỡ, để rồi tái tạo mạnh mẽ hơn vào
+                    ngày hôm sau...</p>
+                <div class="card-date">12 Tháng 09, 2023</div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Kích hoạt animation khi load trang blog
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const header = document.querySelector('.blog-header');
+                const controls = document.querySelector('.blog-controls');
+                const grid = document.querySelector('.blog-grid');
+                if (header) header.classList.add('is-visible');
+                if (controls) controls.classList.add('is-visible');
+                if (grid) grid.classList.add('is-visible');
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

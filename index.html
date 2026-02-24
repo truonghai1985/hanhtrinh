@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey | Personal Timeline</title>
+    <!-- Nhúng Google Fonts cho Typography phong cách điện ảnh -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+    <nav id="main-navigation">
+        <div class="menu-links">
+            <div class="menu-item active" onclick="scrollToSection('intro')" data-target="intro">
+                <span lang="vn">KHỞI ĐẦU</span>
+                <span lang="en">BEGINNING</span>
+            </div>
+            <div class="menu-item" onclick="scrollToSection('journey')" data-target="journey">
+                <span lang="vn">HÀNH TRÌNH (1985-2025)</span>
+                <span lang="en">JOURNEY (1985-2025)</span>
+            </div>
+            <div class="menu-item" onclick="scrollToSection('roadmap')" data-target="roadmap">
+                <span lang="vn">THỬ THÁCH (2026-2035)</span>
+                <span lang="en">ROADMAP (2026-2035)</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='chiem-nghiem.html'">
+                <span lang="vn">CHIÊM NGHIỆM</span>
+                <span lang="en">REFLECTIONS</span>
+            </div>
+        </div>
+
+        <div class="lang-switcher">
+            <span id="btn-vn" class="lang-btn active" onclick="changeLang('vn')">VN</span>
+            <span style="margin: 0 5px; color: #333;">|</span>
+            <span id="btn-en" class="lang-btn" onclick="changeLang('en')">EN</span>
+        </div>
+    </nav>
+
+    <!-- Thanh tiến trình cuộn trang -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <main class="timeline-container">
+        <!-- Phân cảnh khởi đầu (Hero) -->
+        <section class="fullscreen-section hero-section" id="intro">
+            <div class="content-wrapper">
+                <h1 class="fade-up">The Journey</h1>
+                <p class="subtitle fade-up delay-1">Một câu chuyện được kể qua những thăng trầm của thời gian.</p>
+            </div>
+            <div class="scroll-indicator fade-up delay-2">
+                <span>Cuộn để khám phá</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <!-- Phân cảnh 1985 -->
+        <section class="fullscreen-section timeline-section" id="journey">
+            <div class="content-wrapper grid-layout">
+                <div class="image-column">
+                    <div class="image-placeholder reveal-img">
+                        <span>Hình ảnh 1985</span>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <h2 class="year-title fade-left">1985</h2>
+                    <div class="description fade-up delay-1">
+                        <h3>Nơi mọi thứ bắt đầu</h3>
+                        <p>Một điểm khởi đầu khiêm tốn. Những trang giấy trắng đầu tiên được viết lên với bao ước mơ và
+                            hoài bão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân cảnh 1995 -->
+        <section class="fullscreen-section timeline-section alt-layout">
+            <div class="content-wrapper grid-layout">
+                <div class="text-column">
+                    <h2 class="year-title fade-right">1995</h2>
+                    <div class="description fade-up delay-1">
+                        <h3>Những bước chuyển mình</h3>
+                        <p>Thời gian trôi qua mang theo những bài học quý giá, định hình nên những kỷ niệm khó phai mờ
+                            qua từng chương của cuộc đời.</p>
+                    </div>
+                </div>
+                <div class="image-column">
+                    <div class="image-placeholder reveal-img">
+                        <span>Hình ảnh 1995</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân cảnh 2010 -->
+        <section class="fullscreen-section timeline-section">
+            <div class="content-wrapper grid-layout">
+                <div class="image-column">
+                    <div class="image-placeholder reveal-img">
+                        <span>Hình ảnh 2010</span>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <h2 class="year-title fade-left">2010</h2>
+                    <div class="description fade-up delay-1">
+                        <h3>Định hình và phát triển</h3>
+                        <p>Vượt qua những thử thách để vươn tới những tầm cao mới, xây dựng nền móng vững chắc cho tương
+                            lai phía trước.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân cảnh Lộ trình 10 năm thể thao -->
+        <section class="fullscreen-section roadmap-section" id="roadmap">
+            <div class="roadmap-header">
+                <h2 class="fade-up">Lộ Trình Thể Thao</h2>
+                <p class="fade-up delay-1">Khổ luyện rèn ý chí: Trực chỉ Full Ironman 2028</p>
+            </div>
+
+            <div class="roadmap-ladder">
+                <!-- Bước 1 -->
+                <div class="ladder-step fade-up delay-2">
+                    <div class="step-year">2018</div>
+                    <div class="step-node"></div>
+                    <div class="step-content">
+                        <h4>Khởi động</h4>
+                        <p>Bắt đầu làm quen với những bước chạy bộ và sải tay bơi cơ bản đầu tiên.</p>
+                    </div>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="ladder-step fade-up delay-3">
+                    <div class="step-year">2021</div>
+                    <div class="step-node"></div>
+                    <div class="step-content">
+                        <h4>Marathon Đầu Tiên</h4>
+                        <p>Hoàn thành cự ly 42.195km, bước qua giới hạn của bản thân.</p>
+                    </div>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="ladder-step fade-up delay-4">
+                    <div class="step-year">2024</div>
+                    <div class="step-node"></div>
+                    <div class="step-content">
+                        <h4>Half Ironman (70.3)</h4>
+                        <p>Chinh phục thành công 3 môn phối hợp cự ly bán Ironman.</p>
+                    </div>
+                </div>
+
+                <!-- Bước Cuối Cùng -->
+                <div class="ladder-step target-step fade-up delay-5">
+                    <div class="step-year">2028</div>
+                    <div class="step-node highlight"></div>
+                    <div class="step-content">
+                        <h4>FULL IRONMAN</h4>
+                        <p>Mục tiêu tối thượng: Bơi 3.8km – Đạp xe 180km – Chạy bộ 42.2km.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân cảnh kết thúc -->
+        <section class="fullscreen-section outro-section">
+            <div class="outro-fade-line"></div>
+            <div class="content-wrapper">
+                <h2 class="fade-up">Và cuộc hành trình vẫn tiếp diễn...</h2>
+                <div class="back-to-top fade-up delay-1" id="backToTopBtn">
+                    <span>Trở lên đầu trang</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

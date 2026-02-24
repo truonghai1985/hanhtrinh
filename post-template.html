@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết | Personal Timeline</title>
+    <!-- Nhúng Google Fonts cho Typography phong cách điện ảnh -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="post-page">
+
+    <nav id="main-navigation">
+        <div class="menu-links">
+            <div class="back-link" onclick="window.location.href='chiem-nghiem.html'">
+                <span lang="vn"><span class="arrow">&larr;</span> Trở về Blog</span>
+                <span lang="en"><span class="arrow">&larr;</span> Back to Blog</span>
+            </div>
+        </div>
+
+        <div class="lang-switcher">
+            <span id="btn-vn" class="lang-btn active" onclick="changeLang('vn')">VN</span>
+            <span style="margin: 0 5px; color: #333;">|</span>
+            <span id="btn-en" class="lang-btn" onclick="changeLang('en')">EN</span>
+        </div>
+    </nav>
+
+    <main class="post-container">
+
+        <article class="post-content fade-up delay-1 is-visible">
+            <header class="post-header">
+                <div class="post-meta">
+                    <span class="post-category">Ký ức</span>
+                    <span class="post-date">20 Tháng 10, 2012</span>
+                </div>
+                <h1 class="post-title">Ngày đầu tiên cầm máy ảnh</h1>
+            </header>
+
+            <div class="post-body">
+                <p>Cảm giác tĩnh lặng khi nhìn qua ống ngắm, thu trọn thế giới vào một khung hình nhỏ bé là điều mà tôi
+                    sẽ không bao giờ quên.</p>
+
+                <p>Hôm ấy là một chiều thu nắng nhạt, những tia nắng len lỏi qua từng kẽ lá tạo thành những hạt lấp lánh
+                    trên mặt đường nhựa. Lần đầu tiên, tôi không nhìn thế giới bằng đôi mắt trần tục vội vã, mà qua một
+                    lăng kính tĩnh lặng, nơi một phần tư giây có thể ngưng đọng mãi mãi.</p>
+
+                <h2>Góc nhìn thay đổi</h2>
+                <p>Người ta nói máy ảnh chỉ là công cụ để ghi lại sự kiện. Nhưng với tôi, nó là công cụ để học cách quan
+                    sát. Khi cầm máy lên, bạn buộc phải chú ý đến những chi tiết nhỏ nhặt nhất: hướng của ánh sáng lướt
+                    qua một khuôn mặt, sự chuyển động tinh tế của một cành cây, hay một nụ cười thoáng qua sắp tan biến.
+                </p>
+
+                <blockquote>
+                    "Nhiếp ảnh không phải là việc bạn nhìn thấy gì, mà là bạn cảm nhận thế nào về những gì bạn thấy."
+                </blockquote>
+
+                <p>Qua chiếc ống kính 50mm chật chội ấy, tôi dường như tìm thấy một sự tự do vô tận. Tự do lựa chọn điều
+                    gì cần giữ lại, và điều gì có thể thả trôi vào khoảng mù mờ (bokeh) phía sau bối cảnh.</p>
+
+                <p>Nhiều năm trôi qua, công nghệ đã thay đổi. Từ những cuộn phim analog đầy tính rủi ro đến chiếc cảm
+                    biến kỹ thuật số hiện đại. Nhưng cái cảm giác hồi hộp, tĩnh lặng trong sát na bấm máy ấy vẫn nguyên
+                    vẹn như ngày đầu.</p>
+            </div>
+
+            <footer class="post-footer">
+                <div class="share-options">
+                    <!-- Placeholder cho share buttons nếu cần -->
+                    <span>- Hết -</span>
+                </div>
+            </footer>
+        </article>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
